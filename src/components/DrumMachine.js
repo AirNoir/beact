@@ -254,7 +254,7 @@ class DrumMachine extends Component {
    * [startSequence description]
    */
   startSequencer() {
-    this.ani.trigger(21);
+    // this.ani.trigger(21);
     this.sequencer.start();
     this.setState({
       playing: true,
@@ -894,8 +894,8 @@ class DrumMachine extends Component {
         />
         <Matrix
           data={this.state.data}
-          playing={this.state.playing}
           currentBeat={this.state.currentBeat}
+          playing={this.state.playing}
           onClick={(i, j) => this.handleClick(i, j)}
         />
         <div className={styles.animation} id="animation" />
